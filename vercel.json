@@ -1,8 +1,7 @@
 {
   "version": 2,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.js" },
     { "source": "/pay", "destination": "/public/pay.html" },
-    { "source": "/merchant", "destination": "/public/merchant.html" }
+    { "source": "/api/(.*)", "destination": "/api/index.js" }
   ]
 }
