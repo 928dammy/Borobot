@@ -1,1 +1,36 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boro | Fund Vault</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen flex items-center justify-center p-6">
+    <main class="max-w-md w-full bg-white/10 backdrop-blur-xl border border-white/20 rounded-[2.5rem] p-8 shadow-2xl">
+        <div class="text-center mb-10">
+            <h1 class="text-2xl font-black">Fund the Vault</h1>
+            <p class="text-slate-400 text-sm mt-1 uppercase tracking-widest">Givers Never Lack</p>
+        </div>
+
+        <div class="space-y-6">
+            <div>
+                <label class="block text-xs font-bold text-slate-400 mb-2 uppercase">Amount (GHS)</label>
+                <input type="number" id="amount" placeholder="0.00" class="w-full bg-white/5 border border-white/10 rounded-2xl py-5 px-4 text-2xl font-bold outline-none focus:border-blue-500">
+            </div>
+
+            <button onclick="simulatePay()" class="w-full bg-blue-600 py-5 rounded-2xl text-lg font-black shadow-lg">
+                SECURE VAULT NOW
+            </button>
+        </div>
+    </main>
+
+    <script>
+        function simulatePay() {
+            const amount = document.getElementById('amount').value;
+            alert("Boro Demo Mode: You entered ₵" + amount + ". Paystack integration is currently being finalized!");
+        }
+    </script>
+</body>
+</html>
